@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Headboard</title>
+</head>
+
+<body>
+    <h1 id="Headboard">Headboard</H1>
+    <h2>Create a Post</h2>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/logout">Logout</a>
+    <div id="bigbox">
+        <br>
+        {% with messages = get_flashed_messages() %}
+        <!-- declare a variable called messages -->
+        {% if messages %}
+        <!-- check if there are any messages -->
+        {% for message in messages %}
+        <!-- loop through the messages -->
+        <h2>{{message}}</h2>
+        <!-- display each message in a paragraph tag -->
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <form action="/createposting" method="post">
+            <label for="time">How many years have you been coding?</label>
+            <input type="number" name="time" min="0" max="100" value="0">
+            <br>
+            <label for="lines_of_code">How many lines of code did you write today?</label>
+            <input type="number" name="lines_of_code" value="42">
+            <br>
+            <label for="favorite_algo">What's your favorite algorithm?</label>
+            <input type="text" name="favorite_algo" value="Palindromic Partitions">
+            <br>
+            <label for="explanation"> Explanation: </label>
+            <br>
+            <textarea name="explanation" cols="20" rows="4">Palindromic partitions because nested for loops and recursion are interesting.</textarea>
+            <br>
+            <label for="dream_job">What's your dream job?</label>
+            <input type="text" name="dream_job" value="A.I. Engineer">
+            <br>
+            <button id="post" type="submit" value="report" class="btn-primary">Create Post</button>
+        </form>
+    </div>
+</body>
+
+</html>

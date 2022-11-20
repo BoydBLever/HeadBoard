@@ -1,0 +1,62 @@
+#bigger_box {
+    text-align: center;
+    width: 100%;
+}
+
+#big_box {
+    display: flex;
+    width: 100%;
+    margin: -5px;
+    text-align: right;
+    justify-content: center;
+}
+
+#signuph2 {
+    position: relative;
+    top: 12px;
+    right: 65px;
+    font-family: Roboto;
+}
+
+#loginh2 {
+    position: relative;
+    top: 12px;
+    right: 85px;
+    font-family: Roboto;
+}
+
+#headboardh1 {
+    position: relative;
+    top: 20px;
+    right: -30px;
+    font-family: Roboto;
+}
+
+#socialnetworkingh4 {
+    position: relative;
+    top: 5px;
+    right: -32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#submitbutton {
+    position: relative;
+    top: 2px;
+    right: 81px;
+
+}
+
+#loginbutton {
+    position: relative;
+    top: 2px;
+    right: 98px;
+    background-color: royalblue;
+    color: white;
+}
+
+#post{
+    /* position: relative;
+    right: 100px; */
+    background-color: royalblue;
+    color: white;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Headboard</title>
+</head>
+
+<body>
+    <h1>Welcome to the Headboard</h1>
+    <a href="/logout">Logout</a>
+    <a href="/dashboard">Dashboard</a>
+    <br>
+    <!-- <h1>Edit {{ posting.model }}</h1> -->
+    <br>
+    {% with messages = get_flashed_messages() %}
+    <!-- declare a variable called messages -->
+    {% if messages %}
+    <!-- check if there are any messages -->
+    {% for message in messages %}
+    <!-- loop through the messages -->
+    <h2>{{ message }}</h2>
+    <!-- display each message in a paragraph tag -->
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <!--prepopulate the form with posting information-->
+    <form action="/update/{{posting.id}}" method="post">
+        <label for="time">How many years have you been coding?</label>
+        <input type="number" name="time" value="{{posting.time}}">
+        <br>
+        <label for="lines_of_code">How many lines of code did you write today?</label>
+        <input type="number" name="lines_of_code" value="{{posting.lines_of_code}}">
+        <br>
+        <label for="favorite_algo">What's your favorite algorithm?</label>
+        <input type="text" name="favorite_algo" value="{{posting.favorite_algo}}">
+        <br>
+        <label for="explanation">Explanation:</label>
+        <br>
+        <textarea name="explanation" cols="20" rows="4">{{posting.explanation}}</textarea>
+        <br>
+        <label for="dream_job">What's your dream job?</label>
+        <input type="text" name="dream_job" value="{{posting.dream_job}}">
+        <br>
+        <button id="post" type="submit" value="update" class="btn-primary">Update Post</button>
+    </form>
+</body>
+
+</html>
