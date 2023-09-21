@@ -14,7 +14,8 @@ HeadBoard is a a secure social networking web application where software enginee
 ### Dashboard that shows the User's Posts  
 ![Dashboard](./Screenshots/Dashboard.png)  
 ### Create-A-Post 
-![HeadBoard Create-A-Post Feature](./Screenshots/Create-A-Post.png)  
+![Create-A-Post Feature](./Screenshots/Create-A-Post.png)  
 ### View Post 
-![HeadBoard View-Post Feature](./Screenshots/View-Post.png)  
+![View Post Feature](./Screenshots/View-Post.png)  
 ### Edit Post  
+![Edit Post Feature](./Screenshots/Update-Post.png)  
