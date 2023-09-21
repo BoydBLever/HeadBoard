@@ -1,15 +1,21 @@
 # Introduction
 
-HeadBoard is a a secure social networking web application where web developers can create posts about their favorite code, algorithms and career aspirations. I built this fully-functional project with Python and Flask. HeadBoard gives users the ability to create an account with their GitHub or Stackoverflow credentials, and their email address. Once registered, users can login and create posts. Users can then update, view and delete their posts, which are documented by date and time in a dashboard.  
+HeadBoard is a a secure social networking web application where software engineers can create posts about their favorite code, algorithms and career aspirations. I built this fully-functional project with Python and Flask. HeadBoard requires users to create an account with a GitHub or Stackoverflow account, and their email address. Their passwords are encrypted and stored in a local MySQL database. Once registered, users can login and create posts. Users can then update, view and delete their posts, which are displayed by date and time in a dashboard.  
+
+# Prerequisites
+
+- Python 3.10.8
+- Flask 2.2.2
+- MySQL Database 8.0.22
 
 # Features  
-### 1. Login & Registration Page  
+### Secure Login & Registration  
 ![HeadBoard Login & Registration Page](./Screenshots/Log-Reg.png)  
-### 2. Dashboard that shows the User's Posts  
+### Dashboard that shows the User's Posts  
 ![Dashboard](./Screenshots/Dashboard.png)  
-### 3. Create-A-Post Feature  
+### Create-A-Post 
 ![HeadBoard Create-A-Post Feature](./Screenshots/Create-A-Post.png)  
-### 4. View-Post Feature  
+### View Post 
 ![HeadBoard View-Post Feature](./Screenshots/View-Post.png)  
-### 5. Update-Post Feature  
+### Edit Post  
 ![HeadBoard Update-Post Feature](./Screenshots/Update-Post.png)  
