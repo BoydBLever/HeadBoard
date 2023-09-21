@@ -18,4 +18,3 @@ HeadBoard is a a secure social networking web application where software enginee
 ### View Post 
 ![HeadBoard View-Post Feature](./Screenshots/View-Post.png)  
 ### Edit Post  
-![HeadBoard Edit Post Feature](./Screenshots/Update-Post.png)  
