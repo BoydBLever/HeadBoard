@@ -8,6 +8,17 @@ HeadBoard is a a secure social networking web application where software enginee
 - Flask 2.2.2
 - MySQL Database 8.0.22
 
+# Installation & Setup
+
+### 1. Clone the repository:  
+`git clone [HeadBoard URL]`  
+### 2. Navigate to the directory:  
+`cd HeadBoard`  
+### 3. Install prerequisites:  
+- https://www.python.org/downloads/  
+- https://flask.palletsprojects.com/en/2.3.x/installation/  
+- https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/  
+
 # Features  
 ### Secure Login & Registration  
 ![HeadBoard Login & Registration Page](./Screenshots/Log-Reg.png)  
