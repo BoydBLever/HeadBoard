@@ -32,3 +32,6 @@ HeadBoard is a a secure social networking web application where software enginee
 ![View Post Feature](./Screenshots/View-Post.png)  
 ### Edit Post  
 ![Edit Post Feature](./Screenshots/Update-Post.png)  
+
+# Screen Recording
+[![Watch the screen recording](https://img.youtube.com/vi/RLw3CArOaqM/maxresdefault.jpg)](https://youtu.be/RLw3CArOaqM)  
