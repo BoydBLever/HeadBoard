@@ -60,3 +60,13 @@
     background-color: royalblue;
     color: white;
 }
+
+/* This is the container for the logo and the headings */
+#logo-container {
+    display: flex;
+    align-items: center;  /* Align vertically to the center */
+}
+
+#logo {
+    margin-right: 20px;
+}

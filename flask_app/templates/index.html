@@ -11,8 +11,13 @@
 
 <body>
     <div id="bigger_box">
-        <h1 id="headboardh1">The Head Board</h1>
-        <h4 id="socialnetworkingh4">Social networking for coders</h4>
+        <div id="logo-container">
+            <img id="logo" src="{{ url_for('static', filename='images/HeadBoard-Logo.png') }}" alt="Headboard Logo">
+            <div>
+                <h1 id="headboardh1">The Head Board</h1>
+                <h4 id="socialnetworkingh4">Social networking for coders</h4>
+            </div>
+        </div>
         <div id="big_box">
             <div id="register">
                 {% with messages = get_flashed_messages() %}
