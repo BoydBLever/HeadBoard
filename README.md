@@ -3,8 +3,8 @@ A secure social networking web application where developers post their favorite 
 # Screenshots  
 ### 1. Login & Registration Page  
 ![HeadBoard Login & Registration Page](./Screenshots/Log-Reg.png)  
-### 2. Landing Page & Dashboard that shows the User's Posts  
-![HeadBoard Landing Page & Dashboard](./Screenshots/Dashboard.png)  
+### 2. Dashboard that shows the User's Posts  
+![Dashboard](./Screenshots/Dashboard.png)  
 ### 3. Create-A-Post Feature  
 ![HeadBoard Create-A-Post Feature](./Screenshots/Create-A-Post.png)  
 ### 4. View-Post Feature  
