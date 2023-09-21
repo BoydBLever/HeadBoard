@@ -18,6 +18,8 @@ HeadBoard is a a secure social networking web application where software enginee
 - https://www.python.org/downloads/  
 - https://flask.palletsprojects.com/en/2.3.x/installation/  
 - https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/  
+### 4. Run HeadBoard using the terminal command:  
+`python server.py`  
 
 # Features  
 ### Secure Login & Registration  
