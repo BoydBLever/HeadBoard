@@ -10,10 +10,15 @@
 </head>
 
 <body>
-    <h1 id="Headboard">Headboard</H1>
+    <div id="logo-container">
+        <img id="logo-dashboard" src="{{ url_for('static', filename='images/HeadBoard-Logo.png') }}" alt="Headboard Logo">
+        <div>
+            <h1 id="headboardh1">The Head Board</h1>
+        </div>
+    </div>
     <h2>Create a Post</h2>
-    <a href="/dashboard">Dashboard</a>
-    <a href="/logout">Logout</a>
+    <a href="/dashboard" class="dashboard-button">Dashboard</a>
+    <a href="/logout" class="logout-button">Logout</a>
     <div id="bigbox">
         <br>
         {% with messages = get_flashed_messages() %}

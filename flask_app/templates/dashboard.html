@@ -10,60 +10,36 @@
 </head>
 
 <body>
-    <h1>Welcome to the Headboard</h1>
-    <a href="/logout">Logout</a>
+    <div id="logo-container">
+        <img id="logo-dashboard" src="{{ url_for('static', filename='images/HeadBoard-Logo.png') }}"
+            alt="Headboard Logo">
+        <div>
+            <h1 id="headboardh1">The Head Board</h1>
+        </div>
+    </div>
+    <a href="/logout" class="logout-button">Logout</a>
     <p>How many lines of code did you write today, {{user.first_name}}?</p>
-    <h1>Posts</h1>
-    <a href="/postings/new">Create a Post</a>
+    <h1>📋 Posts</h1>
+    <a href="/postings/new" class="green-button">Create-A-Post!</a>
 
     {% for posting in postings %}
-
-    <p>{{ posting.created_at }}</p>
-
-    <p>Posted by: {{ posting.user.first_name }} {{ posting.user.last_name }}</p>
-    <p>Credentials: {{ posting.user.github }} </p>
-
-    <div>
-
-        <a href="/show/{{posting.id}}">View</a>
-        {% if session['user_id'] == posting.user_id %}
-        <a href="/edit/{{posting.id}}">| Edit |</a>
-        <a href="/posting/delete/{{posting.id}}">Delete</a>
-        {% endif %}
-
+    <div class="posting-box">
+        <p>
+            <img src="{{ url_for('static', filename='images/HeadBoard-Logo.png') }}" alt="Headboard Logo"
+                class="small-logo">
+            {{ posting.user.first_name }} {{ posting.user.last_name }}
+        </p>
+        <p class="shifted-right">🪪 Credentials: {{ posting.user.github }} </p>
+        <p class="shifted-right">⏰ Created @ {{ posting.created_at|format_datetime }}</p>
+        <div>
+            <a href="/show/{{posting.id}}" class="action-button">View</a>
+            {% if session['user_id'] == posting.user_id %}
+            <a href="/edit/{{posting.id}}" class="action-button">Edit</a>
+            <a href="/posting/delete/{{posting.id}}" class="action-button delete-button">Delete</a>
+            {% endif %}
+        </div>
     </div>
-
     {% endfor %}
-    <!-- <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
-    </table> -->
 </body>
 
 </html>

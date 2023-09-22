@@ -10,9 +10,14 @@
 </head>
 
 <body>
-    <h1>Welcome to the Headboard</h1>
-    <a href="/logout">Logout</a>
-    <a href="/dashboard">Dashboard</a>
+    <div id="logo-container">
+        <img id="logo-dashboard" src="{{ url_for('static', filename='images/HeadBoard-Logo.png') }}" alt="Headboard Logo">
+        <div>
+            <h1 id="headboardh1">The Head Board</h1>
+        </div>
+    </div>
+    <a href="/dashboard" class="dashboard-button">Dashboard</a>
+    <a href="/logout" class="logout-button">Logout</a>
     <br>
     <!-- <h1>Edit {{ posting.model }}</h1> -->
     <br>

@@ -10,15 +10,20 @@
 </head>
 
 <body>
-    <h1>Welcome to the Headboard</h1>
-    <a href="/logout">Logout</a>
+    <div id="logo-container">
+        <img id="logo-dashboard" src="{{ url_for('static', filename='images/HeadBoard-Logo.png') }}" alt="Headboard Logo">
+        <div>
+            <h1 id="headboardh1">The Head Board</h1>
+        </div>
+    </div>
+    <a href="/logout" class="logout-button">Logout</a>
     <h2> Posted by: {{posting.user.first_name}} {{posting.user.last_name}} </h2>
     <p>Years coding: {{ posting.time }} </p>
     <p>Lines of code written today: {{ posting.lines_of_code }}</p>
     <p>Favorite algorithm: {{ posting.favorite_algo }}</p>
     <p>Explanation: {{ posting.explanation }}</p>
     <p>Dream job: {{posting.dream_job}} </p>
-    <a href="/dashboard">Go back</a>
+    <a href="/dashboard" class="dashboard-button">Go Back</a>
 </body>
 
 </html>

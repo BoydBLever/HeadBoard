@@ -1,7 +1,11 @@
 #bigger_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* This will center its direct children horizontally */
     text-align: center;
     width: 100%;
 }
+
 
 #big_box {
     display: flex;
@@ -27,14 +31,14 @@
 
 #headboardh1 {
     position: relative;
-    top: 20px;
+    top: 5px;
     right: -30px;
     font-family: Roboto;
 }
 
 #socialnetworkingh4 {
     position: relative;
-    top: 5px;
+    top: -5px;
     right: -32px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -43,6 +47,10 @@
     position: relative;
     top: 2px;
     right: 81px;
+    border: 2px solid #0078c5 ;
+    background-color: #0078c5;
+    border-radius: 5px;
+    color: white;
 
 }
 
@@ -50,14 +58,16 @@
     position: relative;
     top: 2px;
     right: 98px;
-    background-color: royalblue;
+    border: 2px solid #0078c5 ;
+    background-color: #0078c5;
+    border-radius: 5px;
     color: white;
 }
 
 #post{
-    /* position: relative;
-    right: 100px; */
-    background-color: royalblue;
+    border: 2px solid #30C0F2 ;
+    background-color: #30C0F2; 
+    border-radius: 5px;
     color: white;
 }
 
@@ -65,10 +75,119 @@
 #logo-container {
     display: flex;
     align-items: center;  /* Align vertically to the center */
+    justify-content: center; /* Align horizontally to the center */
+    width: fit-content; /* This will make the container as wide as its content */
+    margin: 0 auto;     /* This will center it horizontally */
 }
 
 #logo {
-    margin-right: 20px;
-    width: 100px;
+    margin-right: -20px;
+    margin-top: 10px;
+    width: 110px;
     height: auto;
+}
+
+#logo-dashboard {
+    margin-right: -20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 70px;
+    height: auto;
+}
+
+.small-logo {
+    width: 20px;  /* adjust as needed */
+    height: auto;
+    vertical-align: middle;  /* to align with the text */
+    margin-right: -3px;  /* optional spacing between logo and text */
+}
+
+.shifted-right {
+    margin-left: 2px; 
+}
+
+.green-button {
+    display: inline-block;      /* Allow setting of padding and width */
+    padding: 10px 20px;        /* Button padding */
+    background-color: #4CAF50; /* Green color */
+    color: white;              /* Text color */
+    border-radius: 4px;        /* Rounded corners */
+    text-align: center;        /* Centered text */
+    text-decoration: none;    /* Remove underline */
+    font-weight: bold;         /* Bold text */
+    cursor: pointer;           /* Hand cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.green-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.logout-button {
+    display: inline-block;      /* Allow setting of padding and width */
+    padding: 10px 20px;        /* Button padding */
+    background-color: #f0f0f0; /* Light gray color */
+    color: #333;               /* Text color */
+    border-radius: 4px;        /* Rounded corners */
+    text-align: center;        /* Centered text */
+    text-decoration: none;    /* Remove underline */
+    font-weight: bold;         /* Bold text */
+    cursor: pointer;           /* Hand cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.logout-button:hover {
+    background-color: #d7d7d7; /* Slightly darker gray on hover */
+}
+
+.action-button {
+    display: inline-block;      
+    padding: 5px 10px;          
+    background-color: #30C0F2; 
+    color: #fff;               
+    border-radius: 4px;        
+    text-align: center;        
+    text-decoration: none;    
+    font-weight: bold;         
+    margin: 0 5px;             /* Some spacing between buttons */
+    cursor: pointer;           
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #2491bf; /* Slightly darker blue on hover */
+}
+
+.delete-button {
+    background-color: #FF5A5A; /* Red color for Delete button for emphasis */
+}
+
+.delete-button:hover {
+    background-color: #d94a4a; /* Slightly darker red on hover for Delete button */
+}
+
+.posting-box {
+    background-color: #f5f5f5; /* light gray background */
+    padding: 15px;             /* spacing inside the box */
+    margin-bottom: 20px;       /* spacing between each posting box */
+    border-radius: 8px;        /* rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    width: 70%;
+    margin-top: 10px;
+    border-color: darkgray;
+}
+
+.dashboard-button {
+    display: inline-block;
+    background-color: #FF7692;
+    color: #ffffff;              /* White text color */
+    padding: 10px 20px;          /* Padding for space around text */
+    border-radius: 5px;          /* Rounded corners */
+    text-decoration: none;       /* Remove the underline */
+    font-weight: bold;           /* Bold font weight */
+    transition: 0.3s;            /* Smooth transition for hover effect */
+}
+
+.dashboard-button:hover {
+    background-color: #E52557;   /* Slightly darker shade for hover */
 }
