@@ -21,7 +21,7 @@ HeadBoard is a a secure social networking web application where software enginee
 ### 4. Run HeadBoard using the terminal command:  
 `python server.py`  
 
-# Features  
+# Features & MySQL Schema    
 ### Secure Login & Registration  
 ![HeadBoard Login & Registration Page](./Screenshots/Log-Reg.png)  
 ### Dashboard that shows the User's Posts  
@@ -32,6 +32,8 @@ HeadBoard is a a secure social networking web application where software enginee
 ![View Post Feature](./Screenshots/View-Post.png)  
 ### Edit Post  
 ![Edit Post Feature](./Screenshots/Update-Post.png)  
+### MySQL Database Schema - Registered Users
+![MySQL Database Schema](./Screenshots/MySQL-Database-Users.png)  
 
 # Screen Recording
 [![Watch the screen recording](https://img.youtube.com/vi/BrO6sFoG51s/maxresdefault.jpg)](https://youtu.be/BrO6sFoG51s)  
