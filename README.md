@@ -18,8 +18,9 @@ HeadBoard is a a secure social networking web application where software enginee
 - https://www.python.org/downloads/  
 - https://flask.palletsprojects.com/en/2.3.x/installation/  
 - https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/  
-### 4. Run HeadBoard using the terminal command:  
-`python server.py`  
+### 4. Run HeadBoard using these terminal commands:  
+`pip3 install Flask pymysql Flask-Bcrypt`  
+`python3 server.py`  
 
 # Features & MySQL Schema    
 ### Secure Login & Registration  
@@ -28,10 +29,10 @@ HeadBoard is a a secure social networking web application where software enginee
 ![Dashboard](./Screenshots/Dashboard.png)  
 ### Create-A-Post 
 ![Create-A-Post Feature](./Screenshots/Create-A-Post.png)  
-### View Post 
-![View Post Feature](./Screenshots/View-Post.png)  
 ### Edit Post  
 ![Edit Post Feature](./Screenshots/Update-Post.png)  
+### View Post 
+![View Post Feature](./Screenshots/View-Post.png)  
 ### MySQL Database Schema - Registered Users
 ![MySQL Database Schema](./Screenshots/MySQL-Database-Users.png)  
 
